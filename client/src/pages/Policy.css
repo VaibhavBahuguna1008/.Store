@@ -1,0 +1,66 @@
+.policy-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin-top: 100px;
+    background-color: #f9f9f9;
+
+  }
+  
+  .policy-header {
+
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .policy-header h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .policy-header p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .policy-content {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;     /* Center the image vertically (if applicable) */
+    flex-wrap: wrap;         /* Allow items to wrap on smaller screens */
+  }
+  
+  .policy-image {
+    flex: 1;
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .policy-image img {
+    object-fit: cover;
+    border-radius: 20px;
+    max-width: 100%; /* Responsive image */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  
+  .policy-text {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .policy-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .policy-text h3 {
+    font-size: 22px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .policy-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  

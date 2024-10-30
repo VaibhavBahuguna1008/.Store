@@ -1,0 +1,56 @@
+/* Categories.css */
+
+/* Container styling */
+.categories {
+    
+    max-width: 100%;
+    margin-top: 150px;
+
+
+  }
+  
+  /* Row styling */
+  .list {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+.btn2{
+  color: #000;
+  text-decoration: none;
+  font-size: large;
+  text-transform: capitalize;
+}
+  
+  /* Link button styling */
+
+
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .list {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .btn2{
+      overflow-x: auto;
+      width: auto;
+      height: auto;
+      color: #000;
+      white-space: nowrap;
+      text-decoration: none;
+      font-size: medium;
+      text-transform: capitalize;
+    }
+    
+  }
+  

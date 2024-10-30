@@ -1,0 +1,111 @@
+/* Header.css */
+
+/* General Styling for Navbar */
+.navbar {
+    background-color: #F8F9FA; /* Custom background color */
+    padding: 10px 20px;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+    border: none;
+  }
+  
+  .navbar-brand {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .nav-link {
+    text-transform: capitalize;
+    color: #000000;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .navbar .dropdown-menu {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    color: #333;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: gilroy;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* Cart Badge */
+  .navbar .badge {
+    background-color: #ffc107;
+    color: #333;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    padding: 4px 8px;
+  }
+  
+  .navbar .badge:hover {
+    background-color: #ffca2c;
+  }
+  
+  /* Toggler for Mobile */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    color: #0000;
+  }
+  
+  .collapse {
+    justify-content: flex-end;
+  }
+  
+  /* Hover Effects for Buttons */
+  
+  .navbar-toggler-icon:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  .btn:hover,
+  .nav-link:hover:hover{
+    transform: scale(1.02);
+    transition: all ease 0.2s;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 8px 15px;
+      border-end-end-radius: 50px;
+      border-end-start-radius: 50px;
+
+    }
+    .navbar-nav{
+      margin-top: 20px;
+    }
+  
+    .nav-link {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+  
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+  }
+  

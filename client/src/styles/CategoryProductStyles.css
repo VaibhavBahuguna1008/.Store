@@ -1,0 +1,84 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 80px;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.category .card {
+  background-color: rgba(128, 128, 128, 0.097); /* Background color */
+  width: 400px; /* Fixed width for desktop */
+  height: 400px; /* Fixed height */
+}
+
+.category .card-main {
+  overflow: hidden; /* Hide overflow */
+   /* Fixed width for main card */
+  margin: 10px; /* Spacing around cards */
+  border: none; /* Remove default border */
+  border-radius: 30px; /* Rounded corners */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  background-color: #ffffff; /* Card background */
+}
+
+.card-main:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.card-img {
+  height: 300px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 15px; /* Padding for card content */
+}
+
+.card-title {
+  color: #333; /* Title color */
+  font-weight: bold; /* Title weight */
+  margin: 0; /* Remove margin */
+}
+
+.card-price {
+  color: rgb(85, 85, 85); /* Price color */
+  font-size: 1.2rem; /* Font size for price */
+  font-weight: bold; /* Bold price */
+}
+
+.card-text {
+  color: #666; /* Text color */
+  margin-top: 10px; /* Space above text */
+  font-size: 0.9rem; /* Font size for description */
+}
+
+.card-name-price {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between title and price */
+  align-items: center; /* Center items vertically */
+  margin-top: 10px; /* Space above */
+}
+
+.category .card img {
+  height: 300px; /* Fixed height for images */
+}
+
+.category .card img:hover {
+  transform: scale(1.01); /* Slight zoom on hover */
+}
+
+@media (max-width: 767px) {
+  .category {
+    width: 100%; /* Full width on mobile */
+  }
+  .card-main {
+    width: 100%; /* Full width for cards on mobile */
+  }
+}

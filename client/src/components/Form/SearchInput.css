@@ -1,0 +1,40 @@
+/* SearchInput.css */
+
+.search-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the search bar horizontally */
+  }
+  
+  .search-input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding for better click area */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  /* Change border color on focus */
+  .search-input:focus {
+    border-color: #000000; /* Change to a green color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .search-button {
+    margin-left: 10px; /* Space between input and button */
+    padding: 10px 15px; /* Add padding for the button */
+    background-color: #000000; /* Bootstrap success color */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  /* Change background color on hover */
+  .search-button:hover {
+    background-color: #484848; /* Darker green on hover */
+  }
+  
