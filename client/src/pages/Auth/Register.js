@@ -3,7 +3,7 @@ import Layout from "./../../components/Layout/Layout";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import "./Login.css";
+import "./Register.css";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -40,77 +40,80 @@ const Register = () => {
   return (
     <Layout>
       <div className="main" style={{}}>
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <h4 className="title">Register</h4>
-          <div className="input">
+          <div className="input1">
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Name"
+              placeholder="Enter your name"
               required
               autoFocus
             />
           </div>
-          <div className="input">
+          <div className="input1">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Email "
+              placeholder="Enter your Email "
               required
             />
           </div>
-          <div className="input">
+          <div className="input1">
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter Your Password"
+              placeholder="Enter your password"
               required
             />
           </div>
-          <div className="input">
+          <div className="input1">
             <input
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Phone"
+              placeholder="Enter your phone number"
               required
             />
           </div>
-          <div className="input">
+          <div className="input1">
             <input
               type="text"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Address"
+              placeholder="Enter your address"
               required
             />
           </div>
-          <div className="input">
+          <div className="input1 mb-3">
             <input
               type="text"
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="What is Your Favorite sports"
+              placeholder="Enter your favorite sports"
               required
             />
-          </div> 
+          </div>
+          <h4>Have an account ? <span className="text-primary " onClick={() => {
+                navigate("/login");
+              }}>Login</span></h4>
           <div className="btn-main">
-            <button type="submit" className="btn1">
+            <button type="submit" className="btn1 bg-primary border-0 mt-2">
               Register
             </button>
           </div>

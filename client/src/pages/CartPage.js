@@ -79,7 +79,7 @@ const CartPage = () => {
   };
   return (
     <Layout>
-      <div className="" style={{ marginTop: "120px", paddingLeft  : "40px" , paddingRight : "40px"}}>
+      <div className="overflow-x-hidden" style={{ marginTop: "120px", paddingLeft  : "40px" , paddingRight : "40px"}}>
         <div className="">
           <div className="">
             <h1 className="text-center fw-bold bg-light p-2">

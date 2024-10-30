@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <Layout>
       <div className="main">
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <h4 className="title">Login</h4>
 
           <div className="input">
@@ -57,7 +57,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="password">
+          <div className="input mb-3">
             <input
               type="password"
               value={password}
@@ -68,18 +68,21 @@ const Login = () => {
               required
             />
           </div>
+          <h4>Don't have an account ? <span className="text-primary " onClick={() => {
+                navigate("/register");
+              }}>Register</span></h4>
           <div className="btn-main">
             <button
             style={{  }}
               type="button"
-              className="btn1"
+              className="btn1 mt-2 border-0"
               onClick={() => {
                 navigate("/forgot-password");
               }}
             >
               Forgot Password
             </button>
-            <button type="submit" className="btn1">
+            <button type="submit" className="btn1 bg-primary border-0">
             Login
             </button>
           </div>

@@ -37,7 +37,7 @@ const ForgotPasssword = () => {
   return (
     <Layout>
       <div className="main">
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <h4 className="title">Forgot Password</h4>
 
           <div className="input">
@@ -48,7 +48,7 @@ const ForgotPasssword = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Email "
+              placeholder="Enter your Email "
               required
             />
           </div>
@@ -59,24 +59,24 @@ const ForgotPasssword = () => {
               onChange={(e) => setAnswer(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Favorite Sport Name "
+              placeholder="Enter your favorite sport name "
               required
             />
           </div>
-          <div className="password">
+          <div className="input mb-3">
             <input
               type="password"
               value={newPassword}
               onChange={(e) => setNewPassword(e.target.value)}
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter Your New Password"
+              placeholder="Enter your new password"
               required
             />
           </div>
-          <div className="btn-main">
+          <div className="btn-main ">
            
-            <button type="submit" className="btn1">
+            <button type="submit" className="btn1 border-0 bg-primary">
             Reset Password
             </button>
           </div>
