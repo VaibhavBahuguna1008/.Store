@@ -9,7 +9,7 @@ const Users = () => {
   // Function to fetch all users from the API
   const getAllUsers = async () => {
     try {
-      const { data } = await axios.get("/api/v1/auth/all-users");
+      const { data } = await axios.get("https://storeapp-f8uo.onrender.com/api/v1/auth/all-users");
       setUsers(data);
     } catch (error) {
       console.error("Error fetching users:", error);

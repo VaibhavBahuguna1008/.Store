@@ -27,7 +27,7 @@ const Products = () => {
   const getAllProducts = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`/api/v1/product/product-list/${page}`);
+      const { data } = await axios.get(`https://storeapp-f8uo.onrender.com/api/v1/product/product-list/${page}`);
       setLoading(false);
       setProducts((prevProducts) => [...prevProducts, ...data.products]);
     } catch (error) {

@@ -25,7 +25,7 @@ const app = express();
 
 //middelwares
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://storeapp-f8uo.onrender.com",
   credentials: true,
 
 }
